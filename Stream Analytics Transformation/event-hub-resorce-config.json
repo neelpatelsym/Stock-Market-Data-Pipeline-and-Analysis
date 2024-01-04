@@ -1,0 +1,25 @@
+{
+    "sku": {
+        "name": "Standard",
+        "tier": "Standard",
+        "capacity": 1
+    },
+    "id": "/subscriptions/fb586f09-06e1-42af-a0e2-9ad9e99856d5/resourceGroups/nasdaq-stock-rg/providers/Microsoft.EventHub/namespaces/nasdaq-stock-eventhub",
+    "name": "nasdaq-stock-eventhub",
+    "type": "Microsoft.EventHub/Namespaces",
+    "location": "Canada Central",
+    "tags": {},
+    "properties": {
+        "disableLocalAuth": false,
+        "zoneRedundant": true,
+        "isAutoInflateEnabled": false,
+        "maximumThroughputUnits": 0,
+        "kafkaEnabled": true,
+        "provisioningState": "Succeeded",
+        "metricId": "fb586f09-06e1-42af-a0e2-9ad9e99856d5:nasdaq-stock-eventhub",
+        "createdAt": "2023-12-09T17:29:27.12Z",
+        "updatedAt": "2024-01-02T13:11:46.593Z",
+        "serviceBusEndpoint": "https://nasdaq-stock-eventhub.servicebus.windows.net:443/",
+        "status": "Disabled"
+    }
+}
