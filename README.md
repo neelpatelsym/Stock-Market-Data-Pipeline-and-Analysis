@@ -38,5 +38,5 @@ An additional workflow, STOCK_INFO_LOAD, captures stock-related details such as 
 - Language - [**Python**](https://www.python.org)
 
 ### Architecture
-
-![Uploading Architecture.jpg…]()
+The Stock Market Data Pipeline is structured around the λ (lambda) architecture, comprising distinct layers for efficient data processing. The pipeline encompasses an ingestion layer, batch layer, speed layer, serving layer, and analytics layer. The diagram below illustrates the flow and interaction between these layers.
+![Architecture](https://github.com/neelpdesai/Stock-Market-Data-Pipeline-and-Analysis/assets/137664550/08c76e58-5869-4e0a-a18c-09275dfd8a30)
