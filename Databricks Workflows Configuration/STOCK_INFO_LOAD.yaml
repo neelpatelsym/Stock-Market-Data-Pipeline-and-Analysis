@@ -1,0 +1,21 @@
+resources:
+  jobs:
+    STOCK_INFO_LOAD:
+      name: STOCK_INFO_LOAD
+      schedule:
+        quartz_cron_expression: 8 0 10 * * ?
+        timezone_id: America/Chicago
+        pause_status: UNPAUSED
+      tasks:
+        - task_key: STOCK_INFO_ADLS_GEN2_LOAD
+          notebook_task:
+            notebook_path: /Users/xxxxxxxxxxx/nasdaq-10-stock-info-daily-adlsgen2-load
+            source: WORKSPACE
+          existing_cluster_id: xxxx-xxxxxx-xxxxx
+        - task_key: STOCK_INFO_ADLS_GEN2_TO_HIVE_METASTORE_LOAD
+          depends_on:
+            - task_key: STOCK_INFO_ADLS_GEN2_LOAD
+          notebook_task:
+            notebook_path: /Users/xxxxxxxx/Nasdaq-stocks-info-delta-table-load
+            source: WORKSPACE
+          existing_cluster_id: xxxx-xxxxx-xxxxx

@@ -1,0 +1,14 @@
+resources:
+  jobs:
+    STOCK_BATCH_DAILY_LOAD:
+      name: STOCK_BATCH_DAILY_LOAD
+      schedule:
+        quartz_cron_expression: 19 0 17 * * ?
+        timezone_id: America/Chicago
+        pause_status: UNPAUSED
+      tasks:
+        - task_key: STOCK_BATCH_DAILY_LOAD
+          notebook_task:
+            notebook_path: /Users/xxxxxxxx/Nasdaq-stock-daily-batch-load
+            source: WORKSPACE
+          existing_cluster_id: xxxx-xxxx-xxxxx

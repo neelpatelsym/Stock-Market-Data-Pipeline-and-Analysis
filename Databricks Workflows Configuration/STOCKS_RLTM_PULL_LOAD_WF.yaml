@@ -1,0 +1,21 @@
+resources:
+  jobs:
+    STOCKS_RLTM_PULL_LOAD_WF:
+      name: STOCKS_RLTM_PULL_LOAD_WF
+      schedule:
+        quartz_cron_expression: 30 * * * * ?
+        timezone_id: America/Los_Angeles
+        pause_status: PAUSED
+      tasks:
+        - task_key: STOCKS_PULL
+          notebook_task:
+            notebook_path: /Users/xxxxxxxxxxxxxx/Nasdaq-stocks-rltm-ingest
+            source: WORKSPACE
+          existing_cluster_id: xxxx-xxxxxx-xxxxxxx
+        - task_key: STOCK_RLTM_TABLE_LOAD
+          depends_on:
+            - task_key: STOCKS_PULL
+          notebook_task:
+            notebook_path: /Users/xxxxxxxxxxxxxx/Nasdaq-stock-delta-table-transformation
+            source: WORKSPACE
+          existing_cluster_id: xxxx-xxxxxx-xxxxxx
