@@ -22,14 +22,14 @@ An additional workflow, STOCK_INFO_LOAD, captures stock-related details such as 
 
 - Cloud - [**Microsoft Azure**](https://azure.microsoft.com/)
 - Stock APIs - [**Yahoo Fin**](https://developer.yahoo.com/api/)
-- Stream Ingestion - [**Azure Event Hub**]
-- Stream Processing - [**Azure Stream Analytics**]
-- Online Transaction Processing (OLTP) - [**Azure Cosmos DB**]
-- Orchestration - [**Azure Databricks**]
-- Transformation - [**Azure Databricks**]
-- Data Lake - [**Azure Data Lake Gen2**]
-- Data Warehouse - [**Azure Databricks Hive Metastore**]
-- Data Visualization - [**Power BI**]
+- Stream Ingestion - [**Azure Event Hub**](https://azure.microsoft.com/en-ca/products/event-hubs)
+- Stream Processing - [**Azure Stream Analytics**](https://azure.microsoft.com/en-ca/products/stream-analytics)
+- Online Transaction Processing (OLTP) - [**Azure Cosmos DB**](https://azure.microsoft.com/en-ca/products/cosmos-db)
+- Orchestration - [**Azure Databricks**](https://azure.microsoft.com/en-ca/products/databricks)
+- Transformation - [**Azure Databricks**](https://azure.microsoft.com/en-ca/products/databricks)
+- Data Lake - [**Azure Data Lake Gen2**](https://azure.microsoft.com/en-ca/products/storage/data-lake-storage)
+- Data Warehouse - [**Azure Databricks Hive Metastore**](https://docs.databricks.com/en/archive/external-metastores/external-hive-metastore.html)
+- Data Visualization - [**Power BI**](https://www.microsoft.com/en-us/power-platform/products/power-bi)
 - Language - [**Python**](https://www.python.org)
 
 ### Architecture
