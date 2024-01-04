@@ -18,11 +18,6 @@ The Databricks workflow STOCK_BATCH_DAILY_LOAD retrieves information from the ST
 
 An additional workflow, STOCK_INFO_LOAD, captures stock-related details such as Market Cap, Enterprise Value EBITDA, P/E ratio, Price Book MRQ, etc., from Yahoo Finance APIs. The extracted data undergoes a cleaning process before being transferred to Azure Data Lake Storage Gen 2 (ADLS Gen 2). Subsequently, the data is processed and stored in the STOCK_INFO_LOAD table. This critical stock information is then visualized alongside real-time data.
 
-### Data Visualization
-
-![Real time stock analysis dashboard snip](https://github.com/neelpdesai/Stock-Market-Data-Pipeline-and-Analysis/assets/137664550/209a618f-273b-493c-b1b6-af45499c6d21)
-
-
 ### Tools & Technologies
 
 - Cloud - [**Microsoft Azure**](https://azure.microsoft.com/)
@@ -38,5 +33,10 @@ An additional workflow, STOCK_INFO_LOAD, captures stock-related details such as 
 - Language - [**Python**](https://www.python.org)
 
 ### Architecture
+
 The Stock Market Data Pipeline is structured around the λ (lambda) architecture, comprising distinct layers for efficient data processing. The pipeline encompasses an ingestion layer, batch layer, speed layer, serving layer, and analytics layer. The diagram below illustrates the flow and interaction between these layers.
 ![Architecture](https://github.com/neelpdesai/Stock-Market-Data-Pipeline-and-Analysis/assets/137664550/08c76e58-5869-4e0a-a18c-09275dfd8a30)
+
+### Data Visualization
+
+![Real time stock analysis dashboard snip](https://github.com/neelpdesai/Stock-Market-Data-Pipeline-and-Analysis/assets/137664550/209a618f-273b-493c-b1b6-af45499c6d21)
