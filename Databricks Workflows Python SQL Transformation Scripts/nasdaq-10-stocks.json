@@ -1,0 +1,12 @@
+[
+ {"ticker":"AAPL","stock":"Apple,Inc"},
+ {"ticker":"MSFT","stock":"Microsoft Corporation"},
+ {"ticker":"GOOG","stock":"Alphabet, Inc. Class C & Class A "},
+ {"ticker":"AMZN","stock":"Amazon.com, Inc"},
+ {"ticker":"TSLA","stock":"Tesla Inc."},
+ {"ticker":"META","stock":"Meta Platforms, Inc."},
+ {"ticker":"NVDA","stock":"NVIDIA Corporation"},
+ {"ticker":"PEP","stock":"PepsiCo, Inc."},
+ {"ticker":"COST","stock":"Costco Wholesale Corporation"},
+ {"ticker":"AVGO","stock":"Broadcom Inc"}
+]
